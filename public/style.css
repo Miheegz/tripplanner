@@ -1,4 +1,6 @@
-*{box-sizing: border-box;}
+*{
+  box-sizing: border-box;
+}
 
 body{
   margin:0;
@@ -6,3 +8,46 @@ body{
   background-color: #C1B5AD;
 }
 
+#pageHead {
+  display: flex;
+  background-color: gray;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 2;
+}
+
+#pageHeadTitle {
+  font-size: 3rem;
+  color: black;
+}
+
+
+#pageHeadMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: #3A3535;
+  width: 25%;
+
+}
+
+.pageHeadMenuButton {
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#pageMain {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#choiceGUI {
+  flex: 1 1 30%;
+}
+
+#map {
+  height: 100vh;
+  width: 100vw;
+  flex: 1 1 70%;
+}
